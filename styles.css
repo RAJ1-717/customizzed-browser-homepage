@@ -1,0 +1,170 @@
+/* Basic Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 25px;
+    gap: 15px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+.sign-in-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.sign-in-btn:hover {
+    background-color: #1557b0;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 584px;
+    text-align: center;
+}
+
+/* लोगो का साइज नॉर्मल और बड़ा करने के लिए */
+.logo {
+    max-width: 520px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    padding: 6px 15px;
+    margin-bottom: 25px;
+    background-color: #202124;
+}
+
+.search-box:hover,
+.search-box:focus-within {
+    box-shadow: 0 1px 6px rgb(252, 246, 246);
+    background-color: #0040ff;
+    border-color: transparent;
+}
+
+.search-box input {
+    flex: 1;
+    border: none;
+    height: 34px;
+    font-size: 16px;
+    outline: none;
+    padding: 0 10px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.buttons-container button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-size: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.buttons-container button:hover {
+    border: 1px solid #5f6368;
+    background-color: #3c4043;
+}
+
+footer {
+    background-color: #171717;
+    font-size: 14px;
+    color: #9aa0a6;
+    margin-top: auto;
+}
+
+.footer-row {
+    border-top: 1px solid #212327;
+    padding: 15px 30px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: #9aa0a6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .footer-links {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        justify-content: center;
+        gap: 15px;
+    }
+}
